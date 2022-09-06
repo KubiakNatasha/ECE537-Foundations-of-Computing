@@ -50,11 +50,9 @@ print(" ")
 Expected = hire/fact            #theoretical expected value as EH = 1/8!(H1 + H2 + ... + H8!)
 Harmonic= 1 + 1/2 + 1/3 + 1/4 + 1/5 + 1/6 + 1/7 + 1/8
 # Variance = Summation(n) of (1/i)  - Summation(n) of (1/i^2)
-Variance = (1 + 1/2 + 1/3 + 1/4 + 1/5 + 1/6 + 1/7 + 1/8 ) - (1 + 1/4 + 1/9 + 1/16 + 1/25 + 1/36 + 1/49 + 1/64)
+Variance = (Harmonic) - (1 + 1/4 + 1/9 + 1/16 + 1/25 + 1/36 + 1/49 + 1/64)
 
-# Variance = 
-
-#Var(H) = E(H^2) - (EH)^2 = 1/8!(H1^2 + H2^2 + ... + H81^2) - (EH)^2.
+################ PRINT OUT STATEMENTS ################
 print("-----EXPECTATION-----")
 print("Theoretical Expected Value:", Expected)
 print("Value discussed in class as nth value Harmonic: ", Harmonic)
