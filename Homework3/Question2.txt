@@ -1,0 +1,15 @@
+Homework2
+Question 6.4-5: All values are distinct, The BEST CASE of Heapsort is OMEGA(nlgn). Why>
+
+
+HeapSort-> Applies..
+            Build Max-Heap 
+                - Best Case = (O)(n)
+            Max-Heapify
+                - Best Case = (O)(lgn) or (O)(height)
+            HeapSort
+
+Omega(nlgn) is the lower bound of the BEST case. The BESTCASE of Build-Max-Heap AND Heapify for HEAPSORT
+would be (O)(nlgn)
+
+Since is is only as good as (O)(nlgn) then it cannot surpass the lower bound of Omega(nlgn)
