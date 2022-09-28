@@ -15,18 +15,18 @@ def Quicksort(A, p, r):
 def RandomPivot(A , p, r):
 
     pivot = random.randrange(p, r)          #Choose Random Pivot from Range of Array
-    A[p], A[pivot] = A[pivot], A[p]
+    A[p], A[pivot] = A[pivot], A[p]         #exchange A[p] with A[pivot]
     return RandomPartition(A, p, r) 
 #-------------------------------------------------------------------------#
   
 def RandomPartition(A,p,r):
     global Comparisons      #Count each comprison
     pivot = p 
-    i = p + 1 
+    i = p + 1               #i is pivot + 1
     for j in range(p + 1, r + 1):
         if A[j] <= A[pivot]:            #if A[j] is less than pivot
             A[i] , A[j] = A[j] , A[i]   #exchnage A[i] and A[j]
-            Comparisons +=1 
+            Comparisons +=1             #counter
             i = i + 1
     A[pivot] , A[i - 1] = A[i - 1] , A[pivot]   
     pivot = i - 1
